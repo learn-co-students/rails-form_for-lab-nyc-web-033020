@@ -1,0 +1,8 @@
+# Students Index
+
+<h1>Students</h1>
+<ul>
+  <%= @students.each do |s| %>
+    <li><%= link_to s.to_s, student_path(s.id) %></li>
+  <% end %>
+</ul>
