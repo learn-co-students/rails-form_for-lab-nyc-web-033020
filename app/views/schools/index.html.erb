@@ -1,0 +1,4 @@
+<h1>Hello</h1>
+<h1><% @schools.each do |school| %> </h1>
+<p><%= link_to school, school_path(school.id) %></p>
+<% end %>
